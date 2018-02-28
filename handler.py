@@ -13,13 +13,13 @@ BASE_URL = "https://api.telegram.org/bot{}".format(TOKEN)
 def hello(event, context):
     try:
         data = json.loads(event["body"])
-        message = str(data["message"]["text"])
+        mensaje = str(data["message"]["text"])
         chat_id = data["message"]["chat"]["id"]
-        first_name = data["message"]["chat"]["first_name"]
+        primer_nombre = data["message"]["chat"]["first_name"]
 
-        response = "Please /start, {}".format(first_name)
+        respuesta = "Please /start, {}".format(first_name)
 
-        data = {"text": response.encode("utf8"), "chat_id": chat_id}
+        data = {"text": respuesta.encode("utf8"), "chat_id": chat_id}
         url = BASE_URL + "/sendMessage"
         requests.post(url, data)
 
