@@ -1,21 +1,22 @@
-## Serverless Telegram bot on AWS Lambda
+## Serverless Telegram bot en AWS Lambda
 
 ### Intro
-This is a simple template of echo Telegram chatbot written in Python 3 and deployed to AWS Lambda using Serverless framework.
-You can find the tutorial of how to deploy it [here](https://medium.com/@andriidvoiak/serverless-telegram-bot-on-aws-lambda-851204d4236c)
+Este es un template sencillo para regresar un eco del mesaje escrito en Telegram, usando Python3 y lanzar en AWS Lamda usuando Serverless framework.
 
-### Requirements
+Puedes encontrar el tutorial completo en Iglés [aquí](https://medium.com/@andriidvoiak/serverless-telegram-bot-on-aws-lambda-851204d4236c)
+
+### Requerimientos
  1. Python 3
- 2. Node.js v6.5.0 or later
- 3. AWS account with Admin rights
+ 2. Node.js v6.5.0 o anterior
+ 3. Cuenta deAWS  con permisos Administrador
 
-### Deploying
+### Deploying 
 
-Install Serverless framework:
+Instala el "framework" llamado "erverless":
 
 `npm install -g serverless`
 
-Export credentials:
+Exporta tus credenciales:
 
 ```
 export AWS_ACCESS_KEY_ID=<Access key ID>
@@ -23,13 +24,10 @@ export AWS_SECRET_ACCESS_KEY=<Secret access key>
 export TELEGRAM_TOKEN=<Your Telegram Token>
 ```
 
-Install pip requirements:
+Instala los requerimientos pip :
 
 `pip install -r requirements.txt -t vendored`
 
-Deploy to AWS:
+Sube a AWS:
 
 `serverless deploy`
-
-### P.S. 
-If you need more complex solution, take a look on this example: https://github.com/Andrii-D/telegram-stepfunctions-bot/
