@@ -3,7 +3,7 @@
 ### Intro
 Este es un template sencillo para regresar un eco del mesaje escrito en Telegram, usando Python3 y lanzar en AWS Lamda usuando Serverless framework.
 
-Puedes encontrar el tutorial completo en Iglés [aquí](https://medium.com/@andriidvoiak/serverless-telegram-bot-on-aws-lambda-851204d4236c)
+Puedes encontrar el tutorial completo en Iglés [aqui](https://medium.com/@andriidvoiak/serverless-telegram-bot-on-aws-lambda-851204d4236c)
 
 ### Requerimientos
  1. Python 3
